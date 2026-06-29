@@ -15,11 +15,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
 
-      - name: Checkout Code
-        uses: actions/Tanapat-041@v4
+      - name: actions/Tanapat-041
+        uses: actions/checkout@v4
 
       - name: Deploy to GitHub Pages
         uses: actions/gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./ 
+          publish_dir: ./
